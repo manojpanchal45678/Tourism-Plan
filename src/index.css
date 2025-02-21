@@ -135,3 +135,31 @@ img{
    width: 200px;
   
 }
+
+@media (max-width: 768px) {
+  .title{
+      font-size: 15px
+  }
+  .refresh {
+    position: static; /* Fixed hata diya taki scroll ke according aaye */
+    margin: auto; /* Center align ho jaye */
+    flex-direction: column; /* Side-by-side layout ke liye */
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+  }
+.btn-white{
+  height: 30px;
+  width: 150px;
+  border-radius: 7px;
+  font-weight: bold;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: pink;
+
+}
+  img {
+    width: 80px; /* Mobile me chhoti image dikhane ke liye */
+    height: 80px;
+  }
+}

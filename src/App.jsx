@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 //import './App.css'
 import Data from './Data';
 import Tours from './components/Tours';
-
+import empty from "./assets/new-data.png";
 function App() {
   const [tours, setTours] = useState(Data);
     
@@ -18,7 +18,7 @@ function App() {
         <div className="refresh">
             <h2> Empty </h2>
             <div className="img">
-              <img src="/src/assets/new-data.png" alt="No Data !" />
+              <img src={empty} alt="No Data !" />
             </div>
             <button className="btn-white" onClick={() => setTours(Data)}>
               Refresh
