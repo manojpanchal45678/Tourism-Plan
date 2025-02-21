@@ -137,16 +137,25 @@ img{
 }
 
 @media (max-width: 768px) {
-  .title{
-      font-size: 15px
-  }
+  
   .refresh {
+    margin: 0;
+    padding-top: 100px;
     position: static; /* Fixed hata diya taki scroll ke according aaye */
-    margin: auto; /* Center align ho jaye */
-    flex-direction: column; /* Side-by-side layout ke liye */
+   /* Center align ho jaye */
+    display: flex;
+    justify-content: center;
+    align-content: center; /* Side-by-side layout ke liye */
     gap: 10px;
-    justify-items: center;
-    align-items: center;
+  }
+  .title{
+      margin-left: 95px;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+     justify-content: center;
+     flex-direction: column;
+    
   }
 .btn-white{
   height: 30px;
